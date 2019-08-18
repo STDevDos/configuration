@@ -8,5 +8,5 @@ server:
     context-path: /web/j11
   port: 8100
 
-element:
+app:
   applicationname: Wev Java 11
