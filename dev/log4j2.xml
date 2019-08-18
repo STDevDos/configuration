@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<Configuration status="WARN" monitorInterval="30"> 
+    
+    <Appenders> 
+        <RollingFile name="RollingFile" fileName="${env:APPS_DIR}/logs/${env:ARTIFACT_NAME}.log" filePattern="${env:APPS_DIR}/logs/${env:ARTIFACT_NAME}-%d{yyyy-MM-dd}-%i.log" > 
+                <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %X{event};%msg%n"/> 
+                <Policies> 
+                        <SizeBasedTriggeringPolicy size="10 MB" /> 
+                </Policies> 
+                <DefaultRolloverStrategy max="50"/> 
+        </RollingFile> 
+                      
+    </Appenders> 
+    <Loggers> 
+        
+        <Logger name="com.froyo" level="debug" />
+        <Logger name="org.springframework.jdbc" level="trace" />
+        
+        <Root level="error"> 
+                <AppenderRef ref="RollingFile"/> 
+        </Root> 
+    </Loggers> 
+</Configuration>

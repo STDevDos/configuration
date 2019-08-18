@@ -1,0 +1,12 @@
+logging:
+  level:
+    com:
+      froyo: debug
+
+server:
+  servlet:
+    context-path: /web/j11
+  port: 8100
+
+element:
+  applicationname: Wev Java 11
