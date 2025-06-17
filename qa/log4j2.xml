@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Configuration for Log4j2 2.20 or newer -->
 <Configuration status="WARN" monitorInterval="30"> 
     
     <Appenders> 

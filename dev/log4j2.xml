@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Configuration for Log4j2 2.20 or newer -->
 <Configuration status="warn" name="MyApp" packages="">
 	<Properties>
 		<Property name="baseDir">logs</Property> <!-- Name of the folder for the logs files. -->

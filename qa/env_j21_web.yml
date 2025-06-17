@@ -5,8 +5,8 @@ logging:
 
 server:
   servlet:
-    context-path: /web/j11
+    context-path: /web/j21
   port: 8100
 
 app:
-  applicationname: Wev Java 11
+  applicationname: Wev Java 21
